@@ -26,7 +26,7 @@ class CommandLine
     #[ORM\JoinColumn(nullable: false)]
     private ?Facture $facture = null;
 
-    #[ORM\ManyToOne(fetch: 'EAGER')]
+    #[ORM\ManyToOne(fetch: 'EAGER')] //join
     #[ORM\JoinColumn(nullable: false)]
     private ?Product $product = null;
 
